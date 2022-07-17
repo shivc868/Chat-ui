@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  outline: none !important;
+}
+
+.divider {
+  width: 100%;
+  height: 3px;
+  background-color: #9099a03a;
+}
+
+.active-tab {
+  position: relative;
+}
+.active-tab:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #39a9e8;
+}
+
+.profile-wrapper {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  /* border: 3px solid #39a9e8; */
+}
+.profile-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.favorite-icon {
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  border-radius: 50%;
+}
+.isLive {
+  position: absolute;
+  top: 80%;
+  right: 5px;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  background-color: rgb(3, 255, 3);
+}
+.hide-content {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  overflow: hidden;
+}
+.pendingToSeen {
+  width: 22px;
+  height: 22px;
+  background-color: blue;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+}
+.message-wrapper {
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
